@@ -30,5 +30,6 @@ class Transfer
       @receiver.balance -= amount
       @status = "complete"
     end
+    execute_transaction.reverse
   end
 end
