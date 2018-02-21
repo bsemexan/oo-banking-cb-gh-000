@@ -15,4 +15,5 @@ class BankAccount
 
   def display_balance
     "#{@balance}"
+  end
 end
