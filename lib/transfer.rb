@@ -18,6 +18,8 @@ class Transfer
       @receiver.deposit(amount)
       @sender.balance -= amount
       @status = "complete"
+    else
+      @status = "rejected"
     end
   end
 end
